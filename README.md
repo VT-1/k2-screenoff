@@ -3,10 +3,13 @@
 **Пакет:** `com.al.k2screenoff` · **minSdk 21 / targetSdk 34** · **Собрано:** 2026-11-16
 
 > **AI-generated / Сгенерировано ИИ** — приложение написано, собрано и проверено
-> ИИ-агентом (Hermes Agent) на реальном телевизоре Xiaomi MiTV (Android TV 14).
-> Ручных правок кода не было. / *The app was written, built and verified by an
-> AI agent (Hermes Agent) on a real Xiaomi MiTV (Android TV 14); no manual code
-> edits.*
+> ИИ-агентом (Hermes Agent, LLM **Qwen3.8-27B-Uncensored-Q4_K_M**) на реальном
+> телевизоре. Ручных правок кода не было.
+> **Стенд проверки:** Xiaomi MiTV-MZTU1 (торговое имя: «55" Телевизор Xiaomi TV A 55 2026 4K Ultra HD»), Android TV 14.
+> / *AI-generated — the app was written, built and verified by an AI agent
+> (Hermes Agent, LLM **Qwen3.8-27B-Uncensored-Q4_K_M**) on a real TV; no manual code
+> edits. Tested on: Xiaomi MiTV-MZTU1 (trade name: 55" Xiaomi TV A 55 2026 4K Ultra HD),
+> Android TV 14.*
 
 ## Русский
 
