@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.al.k2screenoff"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34"/>
+
+    <!-- Needed for Settings.Global.putInt (screen_off_control) -->
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <application android:label="K2Screen" android:allowBackup="false"
+        android:hardwareAccelerated="false">
+
+        <!-- Picture OFF. LAUNCHER + app-link: android://k2screenoff [/off] -->
+        <activity android:name=".OffActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:exported="true"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="android" android:host="k2screenoff" android:path="/off"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Picture ON. app-link: android://k2screenoff/on -->
+        <activity android:name=".OnActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:exported="true"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="android" android:host="k2screenoff" android:path="/on"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,6 @@
+# build intermediates (final signed APK is in dist/)
+classes/
+dexout/
+app.apk
+app-aligned.apk
+build/TvService.apk
